@@ -46,20 +46,20 @@ public class GridLayoutManager extends JFrame implements PositionListener {
 
         // Load images for cells
         try {
-            grassImage = ImageIO.read(new File("snow.png"));
-            raccoonImage = ImageIO.read(new File("agent.png"));
-            obstacleImage = ImageIO.read(new File("wall.png"));
-            endImage = ImageIO.read(new File("house.png"));
+            grassImage = ImageIO.read(new File("img/snow.png"));
+            raccoonImage = ImageIO.read(new File("img/agent.png"));
+            obstacleImage = ImageIO.read(new File("img/wall.png"));
+            endImage = ImageIO.read(new File("img/house.jpg"));
 
             stopImages = Arrays.asList(
-                    ImageIO.read(new File("deer.png")),
-                    ImageIO.read(new File("deer2.png")),
-                    ImageIO.read(new File("deer3.png")),
-                    ImageIO.read(new File("deer4.png")),
-                    ImageIO.read(new File("deer5.png")),
-                    ImageIO.read(new File("deer6.png")),
-                    ImageIO.read(new File("deer7.png")),
-                    ImageIO.read(new File("deer8.png"))
+                    ImageIO.read(new File("img/deer.png")),
+                    ImageIO.read(new File("img/deer2.png")),
+                    ImageIO.read(new File("img/deer3.png")),
+                    ImageIO.read(new File("img/deer4.png")),
+                    ImageIO.read(new File("img/deer5.png")),
+                    ImageIO.read(new File("img/deer6.png")),
+                    ImageIO.read(new File("img/deer7.png")),
+                    ImageIO.read(new File("img/deer8.png"))
                     // Add more images as needed
             );
         } catch (IOException e) {
