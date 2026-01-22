@@ -1,14 +1,15 @@
-# JADE Multi-Agent Christmas Rescue
+# Communication in a Multi-Agent System in JADE
 
->This project implements a JADE-based multi-agent system comprising the following autonomous agents: coordinator, intermediary, authority and information provider. The coordinator identifies and navigates to distributed targets on a map by communicating with the authority and informant via a defined protocol. The intermediary enables data exchange between the coordinator and authority, which cannot understand each other immediately. The informant ensures that the positions of the targets are obtained through token-based authorization.
+>This project implements a **FIPA-compliant communication protocol** and coordination between four distinct agent types.
 
 ![Java](https://img.shields.io/badge/Java-21-orange) ![JADE](https://img.shields.io/badge/Framework-JADE-blue)
 ## Overview
 
-This project extends the autonomous navigation system developed in assignment 2 into a sophisticated Multi-Agent System (MAS) using JADE.
-For more information on assignment 2 see: https://github.com/gotoryu/dba-pr2.
+This project implements a **JADE-based multi-agent system** comprising the following autonomous agents: coordinator, intermediary, authority and informant. The coordinator identifies and navigates to distributed targets on a map by communicating with the authority and informant via a **FIPA-compliant communication protocol**. The intermediary enables data exchange between the coordinator and authority, which cannot understand each other immediately. The informant ensures that the positions of the targets are obtained through token-based authorization.
 
-While the previous homework focused on pathfinding algorithms (A* with limited vision), this assignment implements **FIPA-compliant communication protocols** and coordination between four distinct agent types to solve a complex, distributed task.
+Developed as part of the *Desarrollo Basado en Agentes* course at the *Universidad de Granada*.
+The project extends the autonomous navigation system developed in assignment 2 into a sophisticated Multi-Agent System (MAS) using JADE.
+For more information on assignment 2 see: https://github.com/gotoryu/dba-pr2.
 
 ## The Scenario
 The `Scout` agent is tasked with rescuing reindeer spread across an unknown map. However, the Scout does not know their locations and cannot communicate directly with the mission lead, `Santa`, due to a language barrier. Ultimately, the task was, to implement a communication protocol involving authentication, translation, and information retrieval.
